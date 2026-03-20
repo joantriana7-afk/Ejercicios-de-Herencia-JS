@@ -100,7 +100,7 @@ console.log("Costo anual total:", total * 12);
 empleado2.desactivar();
 console.log(empleado2.info());
 
-//Mostrar lideres
+//Mostrar lideres.
 console.log(lider1.info());
 console.log(lider1.presentarEquipo());
 
