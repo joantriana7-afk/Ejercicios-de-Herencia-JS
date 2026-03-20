@@ -50,7 +50,7 @@ console.log(empleado3.info());
 
 class Lider extends Empleados{
     constructor(nombre, salario, equipo){
-        super(nombre, salario);
+        super(nombre, "Lider de equipo", salario);
         this.equipo = equipo
         this.cargo = "Lider de equipo"
     }
@@ -66,16 +66,53 @@ class Lider extends Empleados{
 
     info(){
         let miembros = super.info();
-        return miembros + " personas en equipo " + this.equipo.length
+        return miembros
     }
 
 }
 
 let lider1 = new Lider("Ana", "8000000", ["Joan"])
-lider1.agregarMiembro("Yessica")
+lider1.agregarMiembro("y Yessica")
 
-console.log(lider1.presentarEquipo());
+console.log(lider1.info());
 console.log("En el quipo hay un total de: " + lider1.equipo.length + " miembros");
+console.log(lider1.presentarEquipo());
+
+// creacion del 4 empleao y 2 lider
+let empleado4 = new Empleados("Luis", "Desarrollador Junior", "5000000")
+let lider2 = new Lider("Pablo", "8500000", ["Dani"])
+
+//Nomina mensual
+let total = 0;
+
+total = total + parseFloat(empleado1.salario);
+total = total + parseFloat(empleado2.salario);
+total = total + parseFloat(empleado3.salario);
+total = total + parseFloat(empleado4.salario);
+total = total + parseFloat(lider1.salario);
+total = total + parseFloat(lider2.salario);
+
+//Costo anual
+console.log("Costo mensual total:", total);
+console.log("Costo anual total:", total * 12);
+
+//Desactivar empleado
+empleado2.desactivar();
+console.log(empleado2.info());
+
+//Mostrar lideres
+console.log(lider1.info());
+console.log(lider1.presentarEquipo());
+
+console.log(lider2.info());
+console.log(lider2.presentarEquipo());
+
+
+
+
+
+
+
 
 
 
