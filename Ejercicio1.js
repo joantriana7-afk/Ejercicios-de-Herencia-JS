@@ -65,7 +65,8 @@ class Lider extends Empleados{
     }
 
     info(){
-        
+        let miembros = super.info();
+        return miembros + " personas en equipo " + this.equipo.length
     }
 
 }
@@ -74,6 +75,12 @@ let lider1 = new Lider("Ana", "8000000", ["Joan"])
 lider1.agregarMiembro("Yessica")
 
 console.log(lider1.presentarEquipo());
+console.log("En el quipo hay un total de: " + lider1.equipo.length + " miembros");
+
+
+
+
+
 
 
 
