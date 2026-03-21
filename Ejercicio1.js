@@ -13,7 +13,7 @@ class Empleados{
     }
 
     presentarse(){
-        return "empleado: " + this.nombre +", mi cargo es: " + this.cargo
+        return "empleado: " + this.nombre + ", mi cargo es: " + this.cargo
     }
     
     calcularSalarioAnual(){
