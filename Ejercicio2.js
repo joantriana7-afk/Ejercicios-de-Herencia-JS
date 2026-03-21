@@ -98,7 +98,7 @@ class Serie extends Contenido{
         console.log(catalogo[i].ficha());
     }
 
-    //4. Retiren dos contenidos e impriman su estado() para verificar.
+    //4. Retiren dos contenidos e impriman su estado() para verificar..
     
     console.log(peli3.retirar())
     console.log(peli3.estado())
